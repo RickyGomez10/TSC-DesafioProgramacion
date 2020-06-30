@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="694.0" prefWidth="1004.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MatrizHC">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="15.0" layoutY="15.0" text="Definición de componentes" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="796.0">
+         <children>
+            <Label layoutX="233.0" layoutY="9.0" text="Matriz H">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="484.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="696.0" layoutY="12.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="25.0" prefWidth="72.0" text="Siguiente" />
+            <Button layoutX="610.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="72.0" text="Atras" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="48.0" prefHeight="2.0" prefWidth="993.0" />
+      <ImageView fitHeight="78.0" fitWidth="242.0" layoutX="87.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizH2.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="76.0" prefHeight="20.0" prefWidth="365.0" text="Nuestra matriz H esta definida de la siguiente manera:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizH.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="231.0" prefHeight="43.0" prefWidth="365.0" text="Ya definimos ∇N, por lo tanto, reexpresamos dicho valor:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="492.0" layoutX="492.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizH3.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="276.0" layoutX="85.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/NablaXN.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="340.0" layoutX="566.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizH4.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="242.0" layoutX="629.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizH5.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="389.0" prefHeight="102.0" prefWidth="365.0" text="Cabe recalcar que esta expresion Nabla por N Transpuesta se trabaja de la misma manera que Nabla N: Nabla X inversa y Nabla N con la unica diferencia que ahora se debe TRANSPONER el resultado al finalizar la definición de cada componente:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="549.0" layoutY="76.0" prefHeight="102.0" prefWidth="365.0" text="Si recordamos: Nabla epsilon de X inversa esta definida por 1/D * A, en este caso el resultado es el mismo con la diferencia que ahora tenemos A transpuesta. Luego tenemos Nabla epsilon de N (Las matrices que quedan dentro de la integral):" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="77.0" text="1)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="243.0" text="2)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="390.0" text="3)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="78.0" text="4)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="549.0" layoutY="339.0" prefHeight="102.0" prefWidth="401.0" text="Luego de multiplicar el vector Nabla con el vector N, obtener una matriz de 3x4 (similar a la matriz B), distribuir la integral en cada elemento de la matriz resultante 3x4, transformar la integral de volumen en una integral triple en terminos (ε, η,ψ) y sacar como factor comun Jacobiano/24 tenemos:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="341.0" text="5)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="511.0" prefHeight="81.0" prefWidth="401.0" text="La matriz que nos queda por definir es una matriz de 3x4 (similar a la matriz B) y lo unico que nos queda es transponerla con lo que nos quedaria una matriz 4x3, a esta matriz la nombraremos alpha transpuesta:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="513.0" text="6)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="539.0" text="T" />
+      <Label layoutX="246.0" layoutY="539.0" text="T" />
+   </children>
+</AnchorPane>

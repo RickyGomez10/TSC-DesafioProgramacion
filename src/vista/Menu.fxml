@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuC">
+   <children>
+      <ImageView fitHeight="142.0" fitWidth="142.0" layoutX="392.0" layoutY="65.0" onMousePressed="#Malla" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Malla.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_dominio" fitHeight="142.0" fitWidth="153.0" focusTraversable="true" layoutX="236.0" layoutY="65.0" onMousePressed="#Dominio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Dominio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="556.0" layoutY="74.0" onMousePressed="#Tabla" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/TablaConectividades2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_modelo" fitHeight="142.0" fitWidth="142.0" layoutX="230.0" layoutY="226.0" onMousePressed="#Modelo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Modelo2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_MEF" fitHeight="153.0" fitWidth="213.0" layoutX="387.0" layoutY="220.0" onMousePressed="#MEF" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MEF.png" />
+         </image></ImageView>
+      <Pane prefHeight="396.0" prefWidth="200.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutX="66.0" layoutY="183.0" text="MENU" textFill="#b6bcd0">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="98.0" text="00108517" textFill="#b6bcd0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="392.0" layoutY="25.0" prefHeight="20.0" prefWidth="142.0" text="Seleccione una opcion:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

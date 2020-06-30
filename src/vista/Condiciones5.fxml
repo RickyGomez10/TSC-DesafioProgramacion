@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="824.0" prefWidth="869.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Condiciones5C">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="9.0" layoutY="14.0" text="Condiciones de contorno" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="89.0" layoutY="9.0" text="Ultimos pasos">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="396.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="553.0" layoutY="12.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="25.0" prefWidth="72.0" text="Siguiente" />
+            <Button layoutX="472.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="72.0" text="Atras" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="861.0" />
+      <Label layoutX="45.0" layoutY="73.0" prefHeight="41.0" prefWidth="764.0" text="Falta hacer un par de ajustes. Esta matriz M x = b la podemos visualizar como un sistema de ecuaciones lineales (SEL) con 16 ecuaciones y 16 incognitas:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="539.0" layoutX="171.0" layoutY="128.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/UltimosPasos1.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="266.0" prefHeight="69.0" prefWidth="764.0" text="Sin embargo, al aplicar Dirichlet, las incognitas X1, X2, X4, X5 fueron reemplazadas por un valor de 10, dejando asi un SEL con 16 ecuaciones y 12 incognitas. Esto no lo podemos dejar así, ya que para resolver un SEL el numero de ecuaciones debe ser igual que el numero de incognitas, procedemos a eliminar las ecuaciones 1, 2, 4, 5:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="539.0" layoutX="184.0" layoutY="342.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/UltimosPasos2.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="477.0" prefHeight="69.0" prefWidth="764.0" text="Ahora si, ya tenemos un SEL con 12 ecuaciones y 12 incognitas, por ultimo, dejamos nuestras incognitas del lado izquierdo de las ecuaciones y pasamos a restar nuestros valores con Dirichlet al lado derecho de la ecuación:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="641.0" layoutX="133.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/UltimosPasos3.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="641.0" layoutX="134.0" layoutY="667.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/UltimosPasos4.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="342.0" layoutY="647.0" text="Sacando factor comun -10 tenemos:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

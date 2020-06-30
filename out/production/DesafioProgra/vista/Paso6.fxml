@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="649.0" prefWidth="899.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CerrarC">
+   <children>
+      <Label layoutX="54.0" layoutY="79.0" prefHeight="60.0" prefWidth="785.0" text="Hasta este punto ya tenemos formada nuestra forma matricial para cada elemento local, sin embargo, tenemos un problema: la matriz R y la matriz T poseen una doble derivada (2 gradientes) y sabemos que las funciones de forma (N) son lineales, por lo tanto, al hacer doble derivación de la funcioón de forma obtendremos 0 como resultado." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="157.0" prefHeight="41.0" prefWidth="785.0" text="Para solventar esto debemos realizar una integracion por partes en las matrices que poseen doble derivada, en este caso, la matriz R y la matriz T:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="121.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizR.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="568.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizT.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="121.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizRderivadas.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="209.0" layoutX="570.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizTderivadas.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="105.0" fitWidth="411.0" layoutX="16.0" layoutY="370.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/ResultadoMatrizR.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="442.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="105.0" fitWidth="411.0" layoutX="474.0" layoutY="363.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/ResultadoMatrizT.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="511.0" prefHeight="41.0" prefWidth="785.0" text="Ahora la Matriz R se sustituira por la matriz -H y la matriz T se sustituira por la nueva matriz -i, y los vectores Neumann se agregaran al lado derecho del sistema,  con lo que el sistema de matrices queda de la siguiente forma:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="355.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/SistemaFinalDeMatriecs.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="466.0" text="Resultado de integrar por partes la matriz R" />
+      <Label layoutX="553.0" layoutY="466.0" text="Resultado de integrar por partes la matriz T" />
+      <Pane layoutX="-7.0" layoutY="-7.0" prefHeight="57.0" prefWidth="216.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="59.0" layoutY="14.0" text="P a s o 6" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="207.0" layoutY="-7.0" prefHeight="57.0" prefWidth="692.0">
+         <children>
+            <Label layoutX="59.0" layoutY="14.0" text="P a s o 6" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="15.0" text="Integración por partes">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Cerrar" layoutX="587.0" layoutY="18.0" mnemonicParsing="false" onAction="#Cerrar" text="Cerrar" />
+         </children>
+      </Pane>
+      <Separator layoutX="14.0" layoutY="49.0" prefHeight="3.0" prefWidth="878.0" />
+      <Separator layoutX="452.0" layoutY="217.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="2.0" />
+   </children>
+</AnchorPane>

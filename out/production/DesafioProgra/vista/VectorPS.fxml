@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="645.0" prefWidth="767.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VectorPSC">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="15.0" layoutY="15.0" text="Definición de componentes" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="559.0">
+         <children>
+            <Label layoutX="54.0" layoutY="9.0" text="Vector P y Vector S">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="369.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="61.0" text="Cerrar" />
+            <Button layoutX="449.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="61.0" text="Atras" />
+         </children>
+      </Pane>
+      <Separator layoutX="-2.0" layoutY="46.0" prefHeight="8.0" prefWidth="767.0" />
+      <Label layoutX="49.0" layoutY="85.0" prefHeight="61.0" prefWidth="304.0" text="Tenemos de lado derecho de la ecuación el vector P y el vector S, ambos son vector columna 4x1:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/VectorPS.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="49.0" layoutY="363.0" prefHeight="80.0" prefWidth="304.0" text="Las constantes pueden salir de la integral, con lo que obtenemos la misma forma para ambos vectores, bastaría resolver cualquiera de los dos vectores para obtener el resultado:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="99.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/VectorPS2.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="87.0" text="1)" />
+      <Label layoutX="29.0" layoutY="365.0" text="2)" />
+      <Label layoutX="435.0" layoutY="85.0" prefHeight="61.0" prefWidth="304.0" text="Al distribuir la integral en cada elemento del vector y hacer la transformación de la integral a su forma ε, η,ψ obtenemos como resultado:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="121.0" fitWidth="128.0" layoutX="527.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/VectorPS3.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="436.0" layoutY="359.0" prefHeight="49.0" prefWidth="304.0" text="Por último, faltaría multiplicar la constante que sacamos de la integral en cada vector:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="87.0" text="3)" />
+      <Label layoutX="416.0" layoutY="364.0" text="4)" />
+      <ImageView fitHeight="190.0" fitWidth="257.0" layoutX="515.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/VectorPS4.JPG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

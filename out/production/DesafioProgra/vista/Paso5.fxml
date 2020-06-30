@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="622.0" prefWidth="814.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CerrarC">
+   <children>
+      <Label layoutX="63.0" layoutY="71.0" prefHeight="83.0" prefWidth="710.0" text="Galerkin asumió que las funciones de peso y las funciones de forma son iguales (ya que las dos poseen las mismas condiciones a cumplir) por lo tanto, las funciones de peso se transforman en funciones de forma:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="189.0" fitWidth="161.0" layoutX="78.0" layoutY="150.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/ResidualesConGalerkin.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="423.0" layoutY="302.0" prefHeight="19.0" prefWidth="330.0" text="Al reexpresar R1 y R2 a sus respectivos residuales obtenemos" wrapText="true" />
+      <ImageView fitHeight="162.0" fitWidth="340.0" layoutX="418.0" layoutY="145.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/IntegralesConResidualSustituido.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="369.0" prefHeight="42.0" prefWidth="374.0" text="Al distribuir N transpuesta en cada factor y al despejar la ecuación obtenemos:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="152.0" fitWidth="402.0" layoutX="24.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/IntegralesConResidualFinal.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="519.0" layoutY="369.0" prefHeight="42.0" prefWidth="250.0" text="Esto lo podemos ver como un sistema de ecuaciones:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="62.0" fitWidth="200.0" layoutX="559.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/SistemaDeEcuacionesPaso5.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="524.0" layoutY="483.0" text="Y si separamos en forma de matricial:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="531.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/SistemaDeMatricesPaso5.JPG" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="55.0" layoutY="9.0" text="P a s o 5" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="599.0">
+         <children>
+            <Label layoutX="171.0" layoutY="7.0" prefHeight="35.0" prefWidth="214.0" text="Pesos de Galerkin">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="490.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" text="Cerrar" />
+         </children>
+      </Pane>
+      <Separator layoutX="5.0" layoutY="46.0" prefHeight="6.0" prefWidth="805.0" />
+      <Line endX="-26.0" layoutX="386.0" layoutY="255.0" startX="-100.0" />
+      <Line endX="-26.0" layoutX="386.0" layoutY="226.0" startX="-100.0" />
+      <Line endX="-25.5" endY="38.5" layoutX="386.0" layoutY="187.0" startX="-25.5" startY="16.0" />
+      <Line endX="-17.0" endY="62.0" layoutX="403.0" layoutY="175.0" startX="-42.0" startY="27.5" />
+      <Line endX="-16.29290771484375" endY="-13.29290771484375" layoutX="403.0" layoutY="251.0" startX="-42.0" startY="27.5" />
+      <Line endX="-25.5" endY="38.5" layoutX="386.0" layoutY="239.0" startX="-25.5" startY="16.0" />
+      <Separator layoutX="34.0" layoutY="356.0" prefHeight="1.0" prefWidth="763.0" />
+      <Line endX="-26.0" layoutX="484.0" layoutY="490.0" startX="-60.0" />
+      <Line endX="-26.0" layoutX="484.0" layoutY="461.0" startX="-60.0" />
+      <Line endX="-25.5" endY="38.5" layoutX="484.0" layoutY="422.0" startX="-25.5" startY="16.0" />
+      <Line endX="-17.0" endY="62.0" layoutX="501.0" layoutY="410.0" startX="-42.0" startY="27.5" />
+      <Line endX="-16.29290771484375" endY="-13.29290771484375" layoutX="501.0" layoutY="486.0" startX="-42.0" startY="27.5" />
+      <Line endX="-25.5" endY="38.5" layoutX="484.0" layoutY="474.0" startX="-25.5" startY="16.0" />
+   </children>
+</AnchorPane>

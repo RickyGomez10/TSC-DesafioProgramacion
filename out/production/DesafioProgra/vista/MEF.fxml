@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="518.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MEFC">
+   <children>
+      <ImageView fx:id="btn_paso1" fitHeight="133.0" fitWidth="149.0" layoutX="223.0" layoutY="69.0" onMousePressed="#Paso1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_paso2" fitHeight="133.0" fitWidth="133.0" layoutX="395.0" layoutY="69.0" onMousePressed="#Paso2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_paso3" fitHeight="133.0" fitWidth="133.0" layoutX="560.0" layoutY="69.0" onMousePressed="#Paso3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_paso4" fitHeight="133.0" fitWidth="133.0" layoutX="223.0" layoutY="219.0" onMousePressed="#Paso4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_paso5" fitHeight="133.0" fitWidth="133.0" layoutX="395.0" layoutY="219.0" onMousePressed="#Paso5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_paso6" fitHeight="133.0" fitWidth="133.0" layoutX="560.0" layoutY="219.0" onMousePressed="#Paso6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Paso6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btn_DefCom" fitHeight="133.0" fitWidth="142.0" layoutX="223.0" layoutY="366.0" onMousePressed="#DefCom" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/DefinicionComponentes.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="518.0" prefWidth="200.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutX="34.0" layoutY="193.0" prefHeight="133.0" prefWidth="133.0" text="Metodo de Elementos Finitos" textAlignment="CENTER" textFill="#afb2c5" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="374.0" layoutY="29.0" text="Seleccione un paso del MEF:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="395.0" layoutY="366.0" onMousePressed="#Ensamblaje" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Ensamblaje.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="142.0" layoutX="560.0" layoutY="366.0" onMousePressed="#ConCon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/CondicionesContorno.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

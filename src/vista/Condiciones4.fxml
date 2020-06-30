@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="754.0" prefWidth="869.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Condiciones4C">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="9.0" layoutY="14.0" text="Condiciones de contorno" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="70.0" layoutY="9.0" text="Condición de Neumann">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="396.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="553.0" layoutY="12.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="25.0" prefWidth="72.0" text="Siguiente" />
+            <Button layoutX="472.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="72.0" text="Atras" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="861.0" />
+      <Label layoutX="45.0" layoutY="73.0" prefHeight="106.0" prefWidth="764.0" text="Si recordamos, en el &quot;Paso 6 : Integración por partes&quot; obtuvimos un vector de Neumann que, al respejarlo, quedaba restando al lado derecho de la ecuación. La condición de Neumann debe aplicarse en los nodos 3, 6, 7 y 8 pero OJO: Nuestro modelo posee 2 incognitas (A y B) y no estamos utilizando la matriz global del modelo PERO si una con las mismas dimensiones, con esto dicho y a modo ilustrativo, se aplicará la condición de Neumann en donde deberia de estar la incognita B." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="428.0" fitWidth="667.0" layoutX="101.0" layoutY="299.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/MatrizNeumann.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="192.0" prefHeight="86.0" prefWidth="764.0" text="Recordemos que a partir del ensamblaje, para acceder a las posiciones de la incognita B, debemos utilizar la formula i+n donde &quot;i&quot; es el nodo a evaluar y n es el numero total de nodos del dominio, en este caso 8. Por lo tanto, las posiciones en las que se debe aplicar el valor de Neumann son las filas: 11, 14, 15 y 16. Todo esto debe hacerse dentro del vector que resta al lado derecho de la ecuación, el valor de Neumann a utilizar es 5 y el resto de filas deben ser 0: " textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="636.0" prefWidth="869.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Condiciones1C">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="9.0" layoutY="14.0" text="Condiciones de contorno" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="101.0" layoutY="9.0" text="Condición de Dirichlet">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="442.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="521.0" layoutY="12.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="25.0" prefWidth="72.0" text="Siguiente" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="861.0" />
+      <Label layoutX="55.0" layoutY="52.0" prefHeight="123.0" prefWidth="777.0" text="La condición de Dirichlet es una condición de contorno el cual especifica que un segmento del dominio posee un valor especifico de la incógnita a evaluar, para nuestro dominio, se aplicara la condición de Dirichlet en los nodos 1, 2, 4, 5:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="459.0" fitWidth="661.0" layoutX="133.0" layoutY="158.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/DirichletBlanco.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

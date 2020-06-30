@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="869.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Condiciones6C">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="9.0" layoutY="14.0" text="Condiciones de contorno" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="89.0" layoutY="9.0" text="Ultimos pasos">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="457.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="543.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="72.0" text="Atras" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="861.0" />
+      <Label layoutX="45.0" layoutY="86.0" text="Finalmente, podemos regresar nuestro SEL a su forma matricial, quedando de la siguiente manera:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="261.0" fitWidth="827.0" layoutX="38.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/UltimosPasos5.JPG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

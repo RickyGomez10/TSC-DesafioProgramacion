@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="376.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.TablaConectividadesC">
+   <children>
+      <TableView fx:id="tableView" layoutX="243.0" layoutY="100.0" prefHeight="200.0" prefWidth="483.0">
+        <columns>
+          <TableColumn fx:id="Elemento" prefWidth="102.0" text="Elemento" />
+          <TableColumn fx:id="uno" minWidth="0.0" prefWidth="94.0" text="Nodo 1" />
+            <TableColumn fx:id="dos" prefWidth="99.0" text="Nodo 2" />
+            <TableColumn fx:id="tres" prefWidth="68.0" text="Nodo 3" />
+            <TableColumn fx:id="cuatro" prefWidth="119.0" text="Nodo 4" />
+        </columns>
+      </TableView>
+      <Label layoutX="281.0" layoutY="43.0" text="Tabla de conectividades para una malla de 6 elementos y 8 nodos">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="427.0" layoutY="330.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="25.0" prefWidth="116.0" text="Regresar" />
+      <Pane prefHeight="376.0" prefWidth="200.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutY="141.0" prefHeight="95.0" prefWidth="200.0" text="TABLA DE CONECTIVIDADES" textAlignment="CENTER" textFill="#c4c8d6" wrapText="true">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

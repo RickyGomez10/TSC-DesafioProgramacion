@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="574.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CerrarC">
+   <children>
+      <Label layoutX="39.0" layoutY="77.0" prefHeight="31.0" prefWidth="537.0" text="Al asumir valores en los nodos del Tetraedro, se obtiene una aproximación del modelo:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="193.0" layoutY="118.0" text="x ∙ ∇(NA) + (3x-y) ∙ ∇(∇(NB)) ≈ 41.9" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="198.0" layoutY="143.0" text="y^2 ∙ ∇(∇(NA)) + x ∙ ∇(NB) ≈ 77.2" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="174.0" text="Al aproximar las ecuaciones se obtiene un error, este error se llama residual" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="176.0" layoutY="215.0" text="0 ≈ 41.9 -  x ∙ ∇(NA) - (3x-y) ∙ ∇(∇(NB))" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="176.0" layoutY="245.0" text="0  ≈ 77.2 -  y^2 ∙ ∇(∇(NA)) - x ∙ ∇(NB)" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="168.0" layoutY="294.0" text="R1 ≈ 41.9 -  x ∙ ∇(NA) - (3x-y) ∙ ∇(∇(NB))" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="168.0" layoutY="321.0" text="R2  ≈ 77.2 -  y^2 ∙ ∇(∇(NA)) - x ∙ ∇(NB)" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="367.0" prefHeight="49.0" prefWidth="537.0" text="Para compensar el error se deben sumar todos los residuales del dominio, con lo que se procede a utilizar una integral de volumen: " textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="239.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Residuales.JPG" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="56.0" layoutY="9.0" text="P a s o 3" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="389.0">
+         <children>
+            <Label layoutX="119.0" layoutY="9.0" text="Residual">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="301.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" text="Cerrar" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="594.0" />
+   </children>
+</AnchorPane>

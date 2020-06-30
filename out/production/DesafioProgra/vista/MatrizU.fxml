@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="869.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MatrizUC">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="15.0" layoutY="15.0" text="Definición de componentes" textFill="#fffbfb">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="208.0" prefHeight="49.0" prefWidth="661.0">
+         <children>
+            <Label layoutX="161.0" layoutY="9.0" text="Matriz U">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="407.0" layoutY="12.0" mnemonicParsing="false" onAction="#Cerrar" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+            <Button layoutX="480.0" layoutY="12.0" mnemonicParsing="false" onAction="#Atras" prefHeight="25.0" prefWidth="72.0" text="Atras" />
+            <Button layoutX="562.0" layoutY="12.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="25.0" prefWidth="72.0" text="Siguiente" />
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="49.0" prefHeight="0.0" prefWidth="861.0" />
+      <ImageView fitHeight="84.0" fitWidth="219.0" layoutX="108.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizU2.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="76.0" prefHeight="20.0" prefWidth="365.0" text="Nuestra matriz Q esta definida de la siguiente manera:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizU.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="231.0" prefHeight="43.0" prefWidth="365.0" text="Ya definimos ∇N, por lo tanto, reexpresamos dicho valor:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="133.0" fitWidth="480.0" layoutX="14.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizU3.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="276.0" layoutX="542.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizQ4.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="298.0" layoutX="542.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizU4.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="580.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/MatrizU5.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="392.0" prefHeight="127.0" prefWidth="365.0" text="El valor A es una matriz de 3x3. Si usamos el peso de galerkin, no podriamos multiplicarlo con la matriz A ya que galerkin tiene dimensiones 4x1, aqui es donde debemos usar el peso de galerkin modificado para poder multiplicar matrices, ademas se debe multiplicar la x por cada elemento de la matriz:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="76.0" prefHeight="43.0" prefWidth="276.0" text="La integral esta en terminos de X, Y, Z, por lo que es necesario pasarla a su forma (ε, η,ψ):" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="77.0" text="1)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="243.0" text="2)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="397.0" text="3)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="78.0" text="4)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="231.0" prefHeight="167.0" prefWidth="276.0" text="Luego de  asociar la Integral triple a cada elemento de galerkin modifucado, podemos sacar como factor comúnu de cada elemento un Jacobiano/24, y nos queda una matriz de expresiones:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="265.0" text="5)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="483.0" prefHeight="94.0" prefWidth="276.0" text="Si reepresamos la matriz de expresiones como Z obtenemos la definicion final de la matriz U:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="499.0" text="6)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

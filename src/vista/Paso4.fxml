@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="448.0" prefWidth="600.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.CerrarC">
+   <children>
+      <Label layoutX="274.0" layoutY="8.0" text="Pesos ponderados">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="104.0" prefHeight="126.0" prefWidth="261.0" text="Sumar todos los residuales del dominio para que se cancelen entre ellos es una situacion muy ideal, por lo tanto, es necesario agregar una funcion de peso para aumentar las probabilidades de cancelar los residuales al sumarlos:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="99.0" />
+      <ImageView fitHeight="150.0" fitWidth="207.0" layoutX="117.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ResidualesConPeso.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="356.0" layoutY="108.0" prefHeight="101.0" prefWidth="217.0" text="Ademas, se debe recordar que el modelo posee 2 incognitas, por lo tanto, es necesario tener 2 funciones de peso para resolver la ecuacion:" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="90.0" fitWidth="125.0" layoutX="402.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Matriz%20Peso.JPG" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-1.0" prefHeight="49.0" prefWidth="208.0" style="-fx-background-color: #ffb347;">
+         <children>
+            <Label layoutX="55.0" layoutY="9.0" text="P a s o 4" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="4.0" layoutY="47.0" prefHeight="0.0" prefWidth="594.0" />
+      <Separator layoutX="314.0" layoutY="105.0" orientation="VERTICAL" prefHeight="316.0" prefWidth="8.0" />
+      <Button layoutX="527.0" layoutY="11.0" mnemonicParsing="false" onAction="#Cerrar" text="Cerrar" />
+   </children>
+</AnchorPane>
