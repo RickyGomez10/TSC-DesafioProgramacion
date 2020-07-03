@@ -20,6 +20,7 @@ public class ConsideracionesC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - DEFINICIÓN DE COMPONENTES");
             stage.show();
             ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         } catch(Exception e) {

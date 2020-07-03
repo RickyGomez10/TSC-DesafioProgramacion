@@ -20,6 +20,7 @@ public class VectorPSC {
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
             stage.show();
+            stage.setTitle("MEF - DEFINICIÓN DE COMPONENTES");
             ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");

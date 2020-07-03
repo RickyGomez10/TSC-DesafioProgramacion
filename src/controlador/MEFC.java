@@ -18,6 +18,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 1");
             stage.show();
 
         } catch(Exception e) {
@@ -33,6 +34,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 2");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -46,6 +48,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 3");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -59,6 +62,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 4");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -72,6 +76,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 5");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -85,6 +90,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - PASO 6");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -98,6 +104,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - DEFINICIÓN DE COMPONENTES");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -111,6 +118,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - CONDICIONES DE CONTORNO");
             stage.show();
         } catch(Exception e) {
             System.out.println("No se pudo abrir nueva ventana");
@@ -125,6 +133,7 @@ public class MEFC {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+            stage.setTitle("MEF - ENSAMBLAJE");
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();
